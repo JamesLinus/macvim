@@ -31,7 +31,8 @@ script:
 
 deploy:
   provider: releases
-  api_key: $GITHUB_OAUTH_TOKEN
+  api_key:
+    secure: $GITHUB_OAUTH_TOKEN
   file: "src/MacVim/build/Release/MacVim-7.4.dmg"
   skip_cleanup: true
   on:
