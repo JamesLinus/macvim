@@ -36,6 +36,6 @@ deploy:
   file: "src/MacVim/build/Release/MacVim-7.4.dmg"
   skip_cleanup: true
   on:
-    all_branches: true
+    repo: macvim-dev/macvim
 
 # vim:set sts=2 sw=2 tw=0 et:
