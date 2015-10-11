@@ -34,5 +34,7 @@ deploy:
   api_key: $GITHUB_OAUTH_TOKEN
   file: "src/MacVim/build/Release/MacVim-7.4.dmg"
   skip_cleanup: true
+  on:
+    all_branches: true
 
 # vim:set sts=2 sw=2 tw=0 et:
