@@ -27,8 +27,10 @@ script:
   - NPROC=$(getconf _NPROCESSORS_ONLN)
   - ./configure $CONFOPT --enable-fail-if-missing && make -j$NPROC
   - ./src/vim --version
-  - make -C src macvim-dmg
+  - make test
 
+before_deploy:
+  - make -C src macvim-dmg
 deploy:
   provider: releases
   api_key:
