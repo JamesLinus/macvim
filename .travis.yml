@@ -37,6 +37,7 @@ deploy:
   skip_cleanup: true
   on:
     all_branches: true
+    tags: true
     repo: macvim-dev/macvim
 
 # vim:set sts=2 sw=2 tw=0 et:
